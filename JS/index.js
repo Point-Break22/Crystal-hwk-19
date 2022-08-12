@@ -1,13 +1,8 @@
-$( "li" ).hover(
-    function() {
-      $( this ).append( $( "<span> ***</span>" ) );
-    }, function() {
-      $( this ).find( "span" ).last().remove();
-    }
-  );
-   
-  $( "li.fade" ).hover(function() {
-    $( this ).fadeOut( 100 );
-    $( this ).fadeIn( 500 );
-  });s
-  
+$(document).ready(function () {
+  console.log('DOCUMENT IS READY TO BE MANIPULATED');
+  $("li.hoverwork").click(function () {
+      $('html, body').animate({
+          scrollTop: $("div.myworkanchor").offset().top
+      }, 1000);
+  });
+});

@@ -20,18 +20,47 @@ body{
 }
 .logo{
     float: left;
-    margin: 10px;
+    padding-left: 2em;
+
 }
 .logo img {
     width: 200px;
     height: 45px;
 }
-.nav{
-    padding-top: 20px;
-    display: flex;
-    float: right;
-    margin-bottom: 30px;
+header {
+  height: 3rem;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex: 1 0 1;
+  line-height: 3em;
+  z-index: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: 2;
+  box-shadow: 0 5px #2791a3
+  ;
 }
+header ul {
+  list-style: none;
+  display: flex;
+  padding-right: 2em;
+}
+header li {
+  display: flex;
+}
+header a {
+  cursor: pointer;
+  padding: 0 2em;
+  background: rgb(255, 255, 255);
+}
+header a:hover {
+  color: #2791a3;
+  background: white;
+  font-weight: bold;
+}
+
 .button{
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.137);
     padding: 10px 30px;
@@ -63,18 +92,7 @@ body{
 }
 a{
   text-decoration: none;
-  color: white;
-}
-header{
-    width: 100%;
-}
-nav ul {list-style: none; padding: 0 ;
-}
-nav ul li {display: inline; padding: 10px;
-}
-nav a {
-    text-decoration: none;
-    color: black;
+  color: black;
 }
 .clear-floats { clear: both; }
 h1 {
@@ -217,3 +235,4 @@ h2 {
       "Mennonite"
     }
     }
+    
