@@ -176,6 +176,13 @@ h2 {
     display: flex;
     justify-content: space-around;
   }
+  .footer-header {
+    font-family: sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
   #categoryGrid {
     margin: 0px 5%;
     display: grid;
